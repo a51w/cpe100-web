@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, intaial-scale=1.0">
+    <title>Supisara Wongphatthanakit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="hero">
+    <nav>
+        
+        <ul>
+            <li>
+                <a href="AboutMe.html">
+                    About me
+                </a>
+            </li>
+            <li>
+                <a href="Education.html">
+                    Education</a>
+            </li>
+            <li><a href="Skill.html">
+                Skill</a>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    Contact</a>
+            </li>
+        </ul>
+        <button type="button" onclick="ToggleBtn()" id="btn"><span></span></button>
+
+    </nav>
+
+    <div class="lamp-container">
+        <img src="lamp.png" class="lamp">
+        <img src="light.png" class="light" id="light">
+
+    </div>
+
+    <div class="text-container">
+        <h1> Supisara<br>Wongphatthanakit </h1>
+        <p>​The Portfolio is presented on this website as part of the CPE-100 Engineering Exploration course.</p>
+        <br>
+        <a href="checkall.html">Check all</a>
+        <div class="control">
+            <p>66070501082</p>
+            <div class="line"><span></span></div>
+            <p>CPE 37</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+
+
+    function ToggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+</script>
+
+</body>
+</html>
